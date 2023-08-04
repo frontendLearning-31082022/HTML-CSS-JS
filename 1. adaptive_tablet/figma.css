@@ -7,14 +7,18 @@
     font-weight: 900;
     font-size: 48px;
     line-height: 30px;
-
     color: #222222;
+    cursor: pointer;
 }
 .big_adv_text2 {
     font-size: 32px;
 }
 .big_adv_text3 {
     color: #F16D7F;
+}
+
+.category{
+    cursor: pointer;
 }
 .descrp {
     font-family: 'Lato';
@@ -56,9 +60,8 @@ feature_items .item > h5 {
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    /* identical to box height */
-
     color: #000000;
+    cursor: pointer;
 }
 
 p.descrp_item {
@@ -88,4 +91,5 @@ p.price_item {
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+    cursor: pointer;
 }

@@ -198,9 +198,11 @@ div.header__navbar_control * {
 
 .item {
     aspect-ratio: 360/587;
+
 }
 .item > img {
-    height: 71.55%;
+  /*   height: 71.55%;*/
+  max-width: 100%;
 }
 
 .btn_show_all_items {
@@ -210,7 +212,6 @@ div.header__navbar_control * {
     min-height: 48px;
     display: block;
     margin-bottom: 3.75vh;
-    cursor: pointer;
 }
 
 @media (max-width: 768px) {
