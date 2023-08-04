@@ -21,9 +21,10 @@
 .header {
   /*  padding-bottom: 4.69vh; */
     min-height:38px;
-    position: sticky;
+    position: fixed;
     height: 4.69vh;
     width: 100%;
+    top: 0px;
 }
 .header img {
     min-height: inherit;
@@ -100,7 +101,7 @@ div.header__navbar_control * {
 
 
 .content {
-    margin-top: 4.69vh;
+    margin-top: 6.69vh;
 }
 
 /* big logo */
