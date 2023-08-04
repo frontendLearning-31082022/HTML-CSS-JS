@@ -9,11 +9,83 @@
     line-height: 30px;
 
     color: #222222;
-
 }
 .big_adv_text2 {
     font-size: 32px;
 }
 .big_adv_text3 {
     color: #F16D7F;
+}
+.descrp {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.descrp > .red_text {
+    color: #F16D7F;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.info {
+    text-align: center;
+}
+.feature_items .info > h1{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+.feature_items .info > p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+feature_items .item > h5 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+p.descrp_item {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #5D5D5D;
+}
+p.price_item {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #F16D7F;
+}
+
+.btn_show_all_items {
+    border: 1px solid #FF6A6A;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
 }

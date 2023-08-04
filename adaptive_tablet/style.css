@@ -8,11 +8,22 @@
     margin: 0 auto
 }
 
+@media (max-width: 768px) {
+  :root {
+    --height_big_logo: 47.92vh;
+    --content_width: 95.83vw;
+  }
+
+}
+
 
 /* navbar */
 .header {
-    padding-bottom: 4.69vh;
+  /*  padding-bottom: 4.69vh; */
     min-height:38px;
+    position: sticky;
+    height: 4.69vh;
+    width: 100%;
 }
 .header img {
     min-height: inherit;
@@ -63,39 +74,148 @@ div.header__navbar_control * {
     margin-left: 33px;
 }
 
-@media (max-width: 447px) {
+@media (max-width: 768px) {
+
+   .header__navbar_right > * {
+        margin-left: 0px;
+    }
+    .btn_menu {
+        margin-right: 25px;
+    }
+    .btn_profile {
+        margin-right: 42px;
+    }
+}
+
+@media (max-width: 310px) {
     .header * {
          margin: 0;
          padding: 0;
          justify-content: space-between;
     }
-
 }
 
 /* navbar */
 
 
+
 .content {
-         width: var(--width_glob);
+    margin-top: 4.69vh;
 }
 
+/* big logo */
 .big_adv {
     height: var(--height_big_logo);
     width: 100%;
-    position: fixed;
     left: 0px;
     background: #F1E4E6;
+    max-height: 100%;
 }
+
+
 .big_adv_content {
-    width: var(--width_glob);
+    width: var(--content_width);
     display: grid;
     grid-template: 100% / 50% 50%;
-    overflow: hidden;
+/*    overflow: hidden; */
     justify-items: end;
     height: 100%;
 }
+.big_adv_content *  {
+    height: inherit;
+ /*    height: 100%; */
+
+}
 .big_adv_text {
-    padding-left: 91.42px;
-    padding-top: 290px;
+    margin-left: 1vw;
 }
 
+.big_logo_right {
+    display: flex;
+    margin-top: calc(var(--height_big_logo) * 0.378);
+    height: calc(var(--height_big_logo) * 0.1217);
+    width: 96.22%;
+        height: fit-content;
+}
+.big_logo_right img {
+    max-height:100%;
+}
+
+@media (max-width: 768px) {
+    .big_logo_right {
+        margin-top: 0px;
+
+    }
+    .big_adv_content {
+        align-items: center;
+    }
+    .big_adv_text {
+        font-size: 44px;
+    }
+    .big_adv_text2 {
+        font-size: 24px;
+    }
+}
+
+/* big logo */
+
+/* categories */
+.categories {
+    margin-top: 4.06vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 16.25vh 11.25vh;
+    gap: 1.88vw;
+    width: var(--content_width);
+}
+.category:nth-child(4) {
+    grid-column-start: span 3;
+}
+.category {
+   background-size: cover;
+   background-position: center;
+   display: table;
+}
+
+.category .descrp {
+  text-align: center;
+  display:table-cell;
+  vertical-align:middle;
+}
+/* categories */
+
+/* feature items */
+.feature_items {
+    width: var(--content_width);
+}
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+/*    grid-template-rows: 36.31vh 36.31vh; */
+    gap: 1.88vw;
+}
+
+.item {
+    aspect-ratio: 360/587;
+}
+.item > img {
+    height: 71.55%;
+}
+
+.btn_show_all_items {
+    width: 13.25vw;
+    min-width: 212px;
+    height: 3vh;
+    min-height: 48px;
+    display: block;
+    margin-bottom: 3.75vh;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.88vw;
+    }
+}
