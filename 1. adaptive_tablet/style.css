@@ -36,15 +36,11 @@
     min-height: inherit;
 }
 
-min-height:initial;
-
-
 .header__navbar {
     height: 4.69vh;
     position: fixed;
     top: 0;
     width: 100%;
-
 }
 
 
@@ -97,6 +93,7 @@ div.header__navbar_control * {
 @media (max-width: 481px) {
 .btn_profile, .btn_cart {
     display: none;
+}
 }
 
 @media (max-width: 310px) {
@@ -241,8 +238,6 @@ div.header__navbar_control * {
      }
 
 }
-
-
 
 /* categories */
 

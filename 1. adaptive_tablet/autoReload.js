@@ -3,6 +3,6 @@
         if(!isOpera){
           let frame=document.createElement('meta');
           frame.setAttribute("http-equiv", 'refresh');
-          frame.setAttribute("content", '3');
+          frame.setAttribute("content", '6');
            document.head.appendChild(frame);
         }
