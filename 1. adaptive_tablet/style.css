@@ -401,6 +401,7 @@ body:before {
     height: 100%;
     padding: 0px;
     cursor: pointer;
+    min-width: 85px;
 }
 .subscribe_action input[type="text"] {
     width: auto;
@@ -526,3 +527,10 @@ body:before {
 }
 
 /* menu */
+
+.social_links {
+    display: grid;
+     grid-template-columns: repeat(4,32px);
+     gap: 7px;
+    justify-items: center;
+}
