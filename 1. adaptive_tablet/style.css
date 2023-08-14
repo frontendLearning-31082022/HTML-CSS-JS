@@ -31,6 +31,7 @@
     height: 4.69vh;
     width: 100%;
     top: 0px;
+    z-index: 1000;
 }
 .header img {
     min-height: inherit;
@@ -325,7 +326,7 @@ body:before {
 
 .footer__adv {
     background: #222224;
-    height: 21.31vh;
+    height: fit-content;
     width: 100vw;
 }
 
@@ -337,6 +338,7 @@ body:before {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.88vw;
     justify-content: center;
+    padding: 100px 0px;
 }
 .footer__adv_item {
     display: flex;
@@ -361,7 +363,7 @@ body:before {
 }
 
 .subscribe {
-    height: 28vh;
+    height: fit-content;
     width: 100vw;
     background-image: url("/img/subscribe_background.svg");
     background-size: cover;
@@ -377,11 +379,13 @@ body:before {
 }
 .subscribe_content > .subscribe_action{
     margin-right: 6.06vw;
+    padding: 150px 0px 156px 0px;
 }
 .subscribe_content > .about{
     max-height: 225px;
     max-width: 359px;
     text-align: center;
+    padding: 97px 0px 126px 0px;
 }
 .subscribe_form {
     width: 100%;
@@ -447,11 +451,11 @@ body:before {
     height: 100%;
 }
 
-/* эксперименты
+
 .item_image {
     position: relative;
 }
-*/
+
 
 .feature_items .item_image:before {
     content: 'Add to Cart';
