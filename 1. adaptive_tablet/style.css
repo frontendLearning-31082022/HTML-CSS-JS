@@ -43,21 +43,22 @@
     width: 100%;
 }
 
-
 .header__navbar_control {
     width: var(--content_width);
     height: inherit;
     display: flex;
     position: relative;
     max-height:100%;
+
 }
 div.header__navbar_control * {
     max-height: inherit;
+    z-index: 100000;
 }
 
 .header__navbar_left {
-    margin-top: 1.16vh;
-    margin-bottom: 1.16vh;
+    height: 50.67%;
+    align-self: center;
     display: flex;
     flex-direction: row;
 }
@@ -68,13 +69,27 @@ div.header__navbar_control * {
     margin-right: 0.63%;
     right: 0px;
     position: absolute;
-    margin-top: 1.63vh;
-    margin-bottom: 1.25vh;
+    top: 34.57%;
+    bottom: 26.67%;
     display: flex;
     flex-direction: row;
+    height: 38.67%;
 }
 .header__navbar_right > * {
     margin-left: 33px;
+}
+
+body {
+    margin-top: 0px;
+}
+
+body:before {
+    content: '';
+    background: yellow;
+    width: 100vw;
+    height: 4.69vh;
+    display: inline-block;
+    top: 0px;
 }
 
 @media (max-width: 768px) {
@@ -104,13 +119,16 @@ div.header__navbar_control * {
     }
 }
 
+
+
 /* navbar */
 
 
-
+/*
 .content {
     margin-top: 6.69vh;
 }
+ */
 
 /* big logo */
 .big_adv {
@@ -429,9 +447,11 @@ div.header__navbar_control * {
     height: 100%;
 }
 
+/* эксперименты
 .item_image {
     position: relative;
 }
+*/
 
 .feature_items .item_image:before {
     content: 'Add to Cart';
