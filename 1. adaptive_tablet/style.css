@@ -98,6 +98,10 @@ body:before {
    .header__navbar_right > * {
         margin-left: 0px;
     }
+   .header__navbar_left > * {
+        margin-left: 32px;
+    }
+
     .btn_menu {
         margin-right: 25px;
     }
@@ -110,6 +114,17 @@ body:before {
 .btn_profile, .btn_cart {
     display: none;
 }
+
+   .header__navbar_left > * {
+        margin-left: 0px;
+    }
+       .header__navbar_left {
+            margin-left: 0px;
+        }
+
+    .btn_menu {
+        margin-right: 16px;
+    }
 }
 
 @media (max-width: 310px) {
@@ -347,20 +362,7 @@ body:before {
     flex-direction: column;
 }
 
-@media (max-width: 768px) {
-    .footer__adv_content {
-        grid-template-columns: 46.88vw;
-    }
-    .footer__adv {
-        height: fit-content;
-        padding: 6.27vh 0px 8.33vh 0px;
-    }
-}
-@media (max-width: 481px) {
-     .footer__adv_content {
-          grid-template-columns: var(--content_width);
-     }
-}
+
 
 .subscribe {
     height: fit-content;
@@ -414,20 +416,7 @@ body:before {
     height: 100%;
     align-items: center;
 }
-@media (max-width: 768px) {
-    .subscribe_content {
-        flex-direction: column;
 
-    }
-     .subscribe {
-          height: fit-content;
-          padding: 28.52vw 0px 28.52vw 0px;
-
-     }
-}
-
-
-/* footer-end */
 .footer_end_content {
     width: var(--content_width);
     display: flex;
@@ -440,6 +429,58 @@ body:before {
     background: #222224;
     width: 100vw;
 }
+
+@media (max-width: 768px) {
+    .subscribe_content {
+        flex-direction: column;
+
+    }
+     .subscribe {
+          height: fit-content;
+
+     }
+}
+@media (max-width: 768px) {
+    .footer__adv_content {
+        grid-template-columns: 46.88vw;
+        padding: 0px 0px 0px 0px;
+    }
+    .footer__adv {
+        height: fit-content;
+        padding: 48px 0px 64px 0px;
+    }
+
+    .subscribe_content > .about {
+        padding: 64px 0px 48px 0px;
+   }
+         .subscribe_content > .subscribe_action {
+             padding: 0px 0px 140px 0px;
+         }
+
+}
+@media (max-width: 481px) {
+     .footer__adv_content {
+          grid-template-columns: var(--content_width);
+     }
+     .footer__adv {
+         height: fit-content;
+
+     }
+      .footer__adv > *{
+        padding: 0px 0px 0px 0px;
+      }
+
+.footer_end_content {
+
+    justify-content: center;
+}
+
+
+}
+
+
+/* footer-end */
+
 
 .feature_items .item_image:after {
     content: '';
