@@ -69,7 +69,6 @@ p.descrp_item {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-
     color: #5D5D5D;
 }
 p.price_item {
@@ -78,7 +77,6 @@ p.price_item {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-
     color: #F16D7F;
 }
 
@@ -117,7 +115,6 @@ p.price_item {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-
     color: #222224;
 }
 
