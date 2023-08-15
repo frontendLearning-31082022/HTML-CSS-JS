@@ -297,7 +297,6 @@ body:before {
 
 .item_image {
     background-size: cover;
-    background-positions: center;
         width: 100%;
         aspect-ratio: 360 / 420;
 }
@@ -406,13 +405,12 @@ body:before {
     min-width: 85px;
 }
 .subscribe_action input[type="text"] {
-    width: auto;
+    width: 65.45%;
     margin-left: 6.18%;
 }
 
 .subscribe_form form {
     display: flex;
-    justify-content: space-between;
     height: 100%;
     align-items: center;
 }
